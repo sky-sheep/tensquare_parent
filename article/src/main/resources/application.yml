@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: article
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306
+    username: root
+    password: nodiot@123
+    driver-class-name: com.mysql.cj.jdbc.Driver
+server:
+  port: 9004
+mybatis-plus:
+#  包扫描路径
+  type-aliases-package: com.demo.*.entity
+  global-config:
+    db-config:
+      id-type: assign_uuid
+    banner: true
